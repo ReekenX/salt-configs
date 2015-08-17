@@ -1,0 +1,31 @@
+webserver-software:
+  pkg.installed:
+    - names:
+      - apache2
+      - mysql-server
+      - mysql-client
+      - python-dev
+      - python-virtualenv
+      - etckeeper
+      - fail2ban
+      - php5
+      - sqlite3
+      - mlocate
+      - screen
+      - vim
+      - rsync
+      - postfix
+      - htop
+      - iftop
+      - mailutils
+      - iotop
+      - file
+      - less
+      - wget
+      - tree
+      - secure-delete
+  service.running:
+    - names:
+      - mysql
+      - memcached
+      - apache2
